@@ -11,7 +11,7 @@ const  Header = () => {
 
     useEffect(() =>{
         if(window.innerWidth > width){
-            setIsOpen(true)
+            setIsOpen((prev) => !prev)
         }
     }, [])
 
